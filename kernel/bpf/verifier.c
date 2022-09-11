@@ -2928,6 +2928,7 @@ static bool is_spillable_regtype(enum bpf_reg_type type)
 	case PTR_TO_MEM:
 	case PTR_TO_FUNC:
 	case PTR_TO_MAP_KEY:
+	case PTR_TO_TP_BUFFER:
 		return true;
 	default:
 		return false;
